@@ -1,0 +1,17 @@
+/*
+  Author: Kyle Demmerle
+  Date: 1/22/16
+  Project: Semi-Autonomous IV Pump
+  File: appStyle.css
+  Description: This file contains the primary style code for the  main page/view
+  of the webApp. 
+
+*/
+
+div.defPage {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    margin: 20px;
+    padding: 20px;
+}
