@@ -13,19 +13,35 @@
 
   <head>
     <link rel="stylesheet" type="text/css" href="css/appStyle.css">
+    <script type="text/javascript" src="js/smoothie.js"></script>
+    <script type="text/javascript" src="js/appScript.js"></script>
+  
   </head>
-  <body  ng-app="sivApp">
+
+  <body  ng-app="sivApp" onload="createNewDiagnostic()">
 
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-
-    <div class = "defPage">
+    
+    <div class="defPage">
       <h1>Test Page, Please Ignore</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at nunc porttitor, efficitur tortor eget, vulputate quam. Duis quis lorem metus. Nulla in massa eros. Etiam hendrerit velit et dapibus facilisis. Donec porttitor risus ac massa dignissim, non varius nisl tincidunt. Mauris id lorem vel nisl auctor dapibus eu placerat nulla. Morbi egestas tempor mi, a placerat mi condimentum a.</p>
     </div>
 
-    <div class = "defPage">
+    <div class="holder">
+      <canvas id="diag1" width="500" height="175"></canvas>
+    </div>
+
+    <div class="holder">
+      <canvas id="diag2" width="500" height="175"></canvas>
+    </div>
+
+    <div class="holder">
+        <canvas id="diag3" width="500" height="175"></canvas>
+    </div>
+
+    <div class="defPage">
       <h1>Still Getting Aquianted with HTML Again</h1>
       <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam blandit, dui in pharetra commodo, enim orci interdum mi, sit amet egestas urna leo vitae ex. Etiam et tincidunt felis, non dignissim risus. Nullam ac velit quis libero gravida bibendum nec quis tortor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec pellentesque turpis vitae tortor accumsan ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent quis vehicula tortor. Vivamus et laoreet velit. </p>
-    </div>
+    </div> 
   </body>
 </html>
