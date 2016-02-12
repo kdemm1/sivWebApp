@@ -16,6 +16,22 @@ div.defPage {
     padding: 20px;
 }
 
-div.holder {
-    padding:20px;
+div.wrapperD1{}
+
+div.holderD1 {
+    text-align:center;
+    display: inline-block;
 }
+
+div.numDiag1 {
+    float: center;
+    display: inline-block;
+    vertical: 
+}
+
+div.wrapperD2{}
+div.holderD2{}
+div.numDiag2{}
+div.wrapperD3{}
+div.holderD3{}
+div.numDiag3{}

@@ -14,6 +14,7 @@
 var line1 = new TimeSeries();
 var line2 = new TimeSeries();
 var line3 = new TimeSeries();
+
 setInterval(function(){
     line1.append(new Date().getTime(), Math.random());
     line2.append(new Date().getTime(), Math.random());
@@ -21,12 +22,17 @@ setInterval(function(){
 }, 1000);
 
 function createNewDiagnostic(){
-    var diag1 = new SmoothieChart();
-    var diag2 = new SmoothieChart();
-    var diag3 = new SmoothieChart();
-    diag1.addTimeSeries(line1);
-    diag2.addTimeSeries(line2);
-    diag3.addTimeSeries(line3);
+    var diag1 = new SmoothieChart({
+    grid: {millisPerLine:500, verticalSections:5}}); //Heart Rate (for now)
+    var diag2 = new SmoothieChart({
+    grid: {millisPerLine:500, verticalSections:5}}); //Pleth (for now)
+    var diag3 = new SmoothieChart({
+    grid: {millisPerLine:500, verticalSections:6}}); //Blood Pressure (for now)
+
+    diag1.addTimeSeries(line1, {strokeStyle:'rgb(0,255,0)'});
+    diag2.addTimeSeries(line2, {strokeStyle:'rgb(0,255,255)'});
+    diag3.addTimeSeries(line3, {strokeStyle:'rgb(255,0,0)'});
+
     diag1.streamTo(document.getElementById("diag1"), 1000);
     diag2.streamTo(document.getElementById("diag2"), 1000);
     diag3.streamTo(document.getElementById("diag3"), 1000);
