@@ -8,30 +8,68 @@
 
 */
 
-div.defPage {
-    background-color: black;
-    color: white;
-    font-style: italic;
-    margin: 20px;
-    padding: 20px;
-}
+div.page {
 
-div.wrapperD1{}
+}
 
 div.holderD1 {
-    text-align:center;
-    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid black;
 }
 
-div.numDiag1 {
-    float: center;
-    display: inline-block;
-    vertical: 
+div.numDiag1{
+    position: relative;
+    display: inline-table;
+    font-size: 12pt;
+    border: 1px dashed green;
+    vertical-align: 115px;
+    right: -200px;
 }
 
-div.wrapperD2{}
-div.holderD2{}
-div.numDiag2{}
-div.wrapperD3{}
-div.holderD3{}
-div.numDiag3{}
+canvas.diag1 {
+    position: relative;
+    display: inline-table;
+}
+
+div.holderD2{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid red;
+    display: inline-table;
+}
+
+div.numDiag2{
+    position: relative;
+    font-size: 12pt;
+    border: 1px dashed green;
+    vertical-align: 115px;
+    right: -200px;
+}
+
+canvas.diag2{
+    position: relative;
+}
+
+div.holderD3{
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid blue;
+}
+
+div.numDiag3{
+    position: relative;
+    display: inline-block;
+    font-size: 12pt;
+    border: 1px dashed green;
+    vertical-align: 115px;
+    right: -200px;
+}
+
+canvas.diag3{
+    position: relative;
+    display: inline-block;
+}
