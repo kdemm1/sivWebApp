@@ -15,21 +15,23 @@ div.page {
 div.holderD1 {
     position: relative;
     text-align: center;
-    padding: 10px;
-    border: 5px solid black;
+    padding: 20px;
+
 }
 
-div.numDiag1{
-    position: relative;
-    display: inline-table;
+span.numDiag1{
+    position: fixed;
+    display: left;
     font-size: 12pt;
-    border: 1px dashed green;
-    vertical-align: 115px;
-    right: -200px;
+    /*BORDER: 1PX DASHED GREEN;*/
+    vertical-align: 115PX;
+    left: 10%;
+    top: 21%;
+    padding: 17PX;
 }
 
 canvas.diag1 {
-    position: relative;
+    position: fixed;
     display: inline-table;
 }
 
@@ -37,39 +39,81 @@ div.holderD2{
     position: relative;
     text-align: center;
     padding: 20px;
-    border: 5px solid red;
-    display: inline-table;
+   /*border: 5px solid red;*/
 }
 
-div.numDiag2{
-    position: relative;
+span.numDiag2{
+    position: fixed;
+    display: inline-table;
     font-size: 12pt;
-    border: 1px dashed green;
+    /*border: 1px dashed green;*/
     vertical-align: 115px;
-    right: -200px;
+    left: 10%;
+    top: 50%
 }
 
 canvas.diag2{
-    position: relative;
+    position: fixed;
+    display: inline-table;
 }
 
 div.holderD3{
     position: relative;
     text-align: center;
     padding: 20px;
-    border: 5px solid blue;
+    /*border: 5px solid blue;*/
 }
 
-div.numDiag3{
-    position: relative;
-    display: inline-block;
+span.numDiag3{
+    position: fixed;
+    display: inline-table;
     font-size: 12pt;
-    border: 1px dashed green;
+    /*border: 1px dashed green;*/
     vertical-align: 115px;
-    right: -200px;
+    left: 10%;
+    top: 75%;
+    padding: 10px;
 }
 
 canvas.diag3{
-    position: relative;
-    display: inline-block;
+    position: fixed;
+    display: inline-table;
+}
+
+span.n1{
+    position: fixed;
+    /*display: inline-table;*/
+    font-size: 36pt;
+    /*border: 1px dashed green;*/
+    vertical-align: 30%;
+    right: 10%;
+    top: 19%;
+    
+}
+
+span.n2{
+    position: fixed;
+    /*display: inline-table;*/
+    font-size: 36pt;
+    /*border: 1px dashed green;*/
+    vertical-align: 30%;
+    right: 10%;
+    top: 45.5%;
+    
+}
+
+span.n3{
+    position: fixed;
+    /*display: inline-table;*/
+    font-size: 36pt;
+    /*border: 1px dashed green;*/
+    vertical-align: 30%;
+    right: 10%;
+    top: 75%;
+    
+}
+
+
+p.num3{
+    font-size: 24pt;
 }

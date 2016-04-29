@@ -15,10 +15,28 @@ var line1 = new TimeSeries();
 var line2 = new TimeSeries();
 var line3 = new TimeSeries();
 
+var num1 = {Value: 0};
+var num2 = {Value: 0};
+var num3 = {Value: 0};
+
+function genDiag(x){
+    x.Value = Math.floor(Math.random() * 100);
+}
+
 setInterval(function(){
-    line1.append(new Date().getTime(), Math.random());
-    line2.append(new Date().getTime(), Math.random());
-    line3.append(new Date().getTime(), Math.random());
+
+    genDiag(num1);
+    line1.append(new Date().getTime(), num1.Value);
+
+    genDiag(num2);
+    line2.append(new Date().getTime(), num2.Value);
+
+    genDiag(num3);
+    line3.append(new Date().getTime(), num3.Value);
+
+    document.getElementById("num1").innerHTML = num1.Value;
+    document.getElementById("num2").innerHTML = num2.Value;
+    document.getElementById("num3").innerHTML = num3.Value;
 }, 1000);
 
 function createNewDiagnostic(){
